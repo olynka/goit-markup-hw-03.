@@ -17,7 +17,7 @@
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+
 
 }
 p,
@@ -34,7 +34,14 @@ ul,
 ol {
   margin: 0;
   padding-left: 0;}
+  img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
 
+
+  
   :root{
     --predominant-text-color:#757575;
     --predominant-titl-color: #212121;
@@ -44,7 +51,7 @@ ol {
     --babackground-minor-color:#2F303A;
     --background-color: #F5F4FA;
     --background-nice-color: #FFFFFF;
-
+    --padding-section:94px;
 
   }
   .body{
@@ -52,11 +59,15 @@ ol {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    
     color:var(--predominant-text-color);
     background-color:var(--background-nice-color) ;
   }
 
   /*-------------HEADER----------*/
+  .header
+   {
+     border: 1px solid #ECECEC;}
   .header-logo {
     font-family: 'Raleway',serif;
     font-weight: 700;
@@ -67,14 +78,15 @@ ol {
    
     color:var(--hover-kolor);
     
-    padding: 24px 25px;
- 
-
+    padding-top: 21px;
+    padding-bottom: 24px;
+    margin-right: 93px;
 }
  
   .header-span{
 color:var(--predominant-titl-color);
   }
+
   .header-link {
     font-weight: 500;
     font-size: 14px;
@@ -98,14 +110,11 @@ letter-spacing: 0.02em;
 text-decoration: none;
 
 color:var(--predominant-text-color);
-  }
- .header-contact{
-   margin-left: 50px;
 
+padding-top: 21px;
+padding-bottom: 24px;
   }
-  .header-contact :not(:last-child){
-    margin-right:0px;
-  }
+ 
   .header-nav{
     display: flex;
   }
@@ -124,25 +133,39 @@ color:var( --hover-kolor);
 .list{
 list-style: none;
 }
+
 .header-list{
   display: flex;
 }
+
+ 
+.header>.container{
+  display: flex;
+  align-items: center;
+ 
+}
+ 
+
 .header-item{
   margin-right: 50px;
-
 }
-.header-item :not(:last-child){
-margin-right:0px;
-
-}
-
-  .container-header{
-    display: flex;
-  }
-.header.container{
-  display: flex;
-}
-
+.header-item:nth-child(3n){
+  margin-right: 0;
+    }
+    
+    .header-list{ 
+      align-items: center;
+      margin-left: auto;
+    }
+    .container-head{
+      margin-left: auto;
+    }
+    .mailto{
+      margin-right: 30px;
+    }
+   
+    
+    
  /*-------------hero----------*/
 
  .hero-title{
@@ -153,7 +176,8 @@ margin-right:0px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color:var(--minor-title-coolor);
-margin-bottom:40px ;
+
+margin-bottom:30px ;
 }
 
 
@@ -162,7 +186,7 @@ font-family:inherit;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
-display: flex;
+min-width: 200px;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
@@ -173,10 +197,18 @@ background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 
+display: flex;
+padding: 10px 32px;
+margin: auto;
   }
   .hero{
 background:var(--babackground-minor-color);
-  }
+padding-top: 200px;
+padding-bottom: 200px;
+text-align: center;
+}
+
+
 
 /*----------strategy---------*/
 
@@ -198,13 +230,23 @@ color:var(--predominant-text-color);
 }
 
 .strategy{
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: var(--padding-section);
+ 
 }
 .strategy-title{
 
   margin-bottom: 10px;
 }
+.strategy-list{
+  display: flex;
+}
+.strategy-item{
+  margin-right: 30px;
+
+}
+.strategy-item:nth-child(4n){
+  margin-right: 0;
+    }
 
 /*-------ABOUT--------*/
 
@@ -215,12 +257,23 @@ line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 color:var(--predominant-titl-color);
+   
 margin-bottom:50px;
 }
 .about{
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: var(--padding-section);
+  padding-bottom:var(--padding-section);
 }
+.about-list{
+  display: flex;
+
+}
+.about-item{
+  margin-right: 30px;
+}
+.about-item:nth-child(3n){
+  margin-right: 0;
+    }
 /*----------TEAM------*/
 
 
@@ -228,11 +281,14 @@ margin-bottom:50px;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
+text-align: center;
 letter-spacing: 0.03em;
 color:var(--predominant-titl-color);
 padding-top: 94;
 padding-bottom: 50px;
+
 }
+
 
 .team-after-title{
 font-weight: 500;
@@ -252,13 +308,23 @@ text-align: center;
 letter-spacing: 0.03em;
 color:var(--predominant-text-color);
 padding-bottom: 30px;
+
 }
 
 .team{
-  padding-top: 94px;
-  padding-bottom: 94px; 
+  padding-top:var(--padding-section);
+  padding-bottom:var(--padding-section); 
+}
+.team-list{
+  display: flex;
+}
+.team-item{
+  margin-right: 30px;
 }
 
+.team-item:nth-child(4n){
+  margin-right: 0;
+    }
 
   /*--------footer-------*/
   
@@ -270,8 +336,7 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 text-decoration: none;
 color:var(--hover-kolor);
-margin: 20px;
-margin-bottom: 20px;
+
   }
 .footer-span{
   color:var(--minor-title-coolor);
@@ -294,12 +359,25 @@ letter-spacing: 0.03em;
 text-decoration: none;
 color: rgba(255, 255, 255, 0.6);
 margin-bottom: 9px;
-
   }
+  
 .footer{
   background-color:var(--babackground-minor-color);
+  padding: 60px 0;
+}
+.footer-item:not(last-child) {
+  display: block;
+  margin-bottom: 9px;
+}
+.footer-list{
+  margin-top:  20px;
 }
   /*--------main----------*/
+  .container-filter{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
   .maim-button{
     font-family:inherit;
 font-weight: 500;
@@ -309,12 +387,24 @@ text-align: center;
 letter-spacing: 0.03em;
 cursor: pointer;
 border: none;
+
 color: var(--predominant-titl-color);
 
+
+padding: 6px 22px;
+display: block;
+max-width: max-content;
 background: #F5F4FA;
 border-radius: 4px;
   }
-.maim-button:hover,
+  .main-bt-item{margin-right: 8px;}
+  .main-bt-item:nth-child(5n){
+    margin-right: 0;
+      }
+
+  
+
+  .maim-button:hover,
 .maim-button:focus{
   color: var(--minor-title-coolor);
   background-color:var(--hover-kolor);
@@ -327,7 +417,9 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: var(--predominant-titl-color);
-  }
+  margin-bottom: 4px;
+}
+
 
   .main-text{
 font-size: 16px;
@@ -339,8 +431,39 @@ color:var(--predominant-text-color);
     text-decoration: none;
   }
   .section-main{
-   margin: 94px 0;
+   margin: var(--padding-section) 0;
   }
   .main-list-button{
     margin-bottom: 50px;
   }
+  .main-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-item{
+   width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+   
+    text-align: left;
+    box-sizing: border-box;
+  }
+  .main-item:nth-child(3n){
+margin-right: 0;
+  }
+  .main-item:nth-last-child(-n+3){
+    margin-bottom: 0 ;
+  }
+
+
+  .main-list-button{
+    display: flex;
+  }
+  .container-title{
+  
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    border-top: 0;
+    padding: 24px 20px;
+  }
+ 
