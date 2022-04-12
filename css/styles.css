@@ -160,7 +160,6 @@ list-style: none;
     }
     .header-contact-item {
       display: block;
-      margin-right: 50px;
     } 
     .header-contact-item:not(:last-child) {
       margin-right: 50px;}
@@ -376,9 +375,8 @@ color: rgba(255, 255, 255, 0.6);
   background-color:var(--babackground-minor-color);
   padding: 60px 0;
 }
-.footer-item{
-  margin-bottom: 9px;
-}
+
+
 .footer-item:not(:last-child) {
   margin-bottom: 9px;}
 
@@ -445,9 +443,7 @@ color:var(--predominant-text-color);
   .main-link{
     text-decoration: none;
   }
-  .section-main{
-   margin: var(--padding-section) 0;
-  }
+  
   .main-list-button{
     margin-bottom: 50px;
   }
