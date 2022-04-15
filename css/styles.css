@@ -113,6 +113,7 @@ color:var(--predominant-text-color);
 
 padding-top: 32px;
 padding-bottom: 32px;
+display: block;
   }
  
   .header-nav{
@@ -471,7 +472,7 @@ margin-right: 0;
   }
   .container-title{
   
-    border-right: 1px solid #EEEEEE;
+    border: 1px solid #EEEEEE;
     border-top: 0;
     padding: 24px 20px;
   }
